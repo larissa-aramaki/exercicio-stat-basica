@@ -1,0 +1,31 @@
+---
+title: "analise.R"
+author: "Larissa Aramaki Tanaka"
+date: "2026-03-24"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Exercício 1:
+
+Feito.
+
+## Exercício 2:
+
+Feito.
+
+## Exercício 3: 
+```{r}
+2+2
+
+x=10
+
+sum(2,x)
+```
+
+
+
+
