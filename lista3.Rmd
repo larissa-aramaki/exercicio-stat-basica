@@ -2,7 +2,7 @@
 title: "analise.R"
 author: "Larissa Aramaki Tanaka"
 date: "2026-03-24"
-output: html_document
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
