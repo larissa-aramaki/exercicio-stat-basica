@@ -1,0 +1,35 @@
+---
+title: "lista3.6.2ex8"
+author: "Larissa Aramaki Tanaka"
+date: "2026-03-24"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(knitr)
+library(ggplot2)
+```
+
+## Exercício 8 - 3.6.2. R Markdown:
+
+### Solicitação (a):
+
+\[
+\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
+\]
+
+### Solicitação (b):
+
+```{r}
+
+pib <- readRDS("pib_cid.RDS")
+media_pib <- mean(pib$pib_per_capita, na.rm = TRUE)
+show (media_pib)
+```
+
+### Solicitação (c):
+
+A média do PIB *per capita* é `r media_pib`.
