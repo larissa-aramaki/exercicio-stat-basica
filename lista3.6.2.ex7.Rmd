@@ -1,0 +1,46 @@
+---
+title: "lista3.6.2ex7"
+author: "Larissa Aramaki Tanaka"
+date: "2026-03-24"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(knitr)
+library(ggplot2)
+```
+
+## Exercício 7 - 3.6.2. R Markdown:
+```{r, echo=FALSE}
+
+pib <- readRDS("pib_cid.RDS")
+
+names(pib) <- make.names(names(pib))
+
+pib_top10 <- head(pib, 10)[, c(3, 8, 39)]
+
+kable(pib_top10, caption = "Top 10 linhas do PIB das cidades", digits = 2)
+```
+
+```{r, echo=FALSE}
+pib <- readRDS("pib_cid.RDS")
+
+top10 <- pib %>% arrange(desc(pib_total)) %>% slice(1:10)
+
+ggplot(top10, aes(x = reorder(nome_munic, pib_total), y = pib_total)) +
+  geom_col(fill = "steelblue") +
+  coord_flip() +
+  labs(
+    title = "Top 10 Cidades por PIB",
+    x = "Cidade",
+    y = "PIB"
+  ) +
+  theme_minimal()
+```
+
+
+
+
+
