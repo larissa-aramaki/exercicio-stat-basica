@@ -34,6 +34,11 @@ mean(a)
 
 ```
 
+## Exercício 6: 
+Alteração na worktree:
+```{r}
+c <- c(9,10,11,12)
+```
 
 
 
