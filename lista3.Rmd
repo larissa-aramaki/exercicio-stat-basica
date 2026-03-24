@@ -25,14 +25,16 @@ x=10
 
 sum(2,x)
 ```
-## Exercício 4: 
-Adicionando mais linhas de código: 
+## Exercício 4/5: 
+Fazendo mudanças no arquivo da branch experimento: 
 ```{r}
-a <- c(1,2,3,4)
+a <- c(5,6,7,8)
 
 mean(a)
 
 ```
+
+
 
 
 
